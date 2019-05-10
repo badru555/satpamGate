@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cari Mahasiswa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <h4>CARI MAHASISWA</h4> -->
+        <br>
+        <div class="panel panel-default" padding="15px">
+            <div class="panel-heading">
+                <h4 class="panel-title">Cari Mahasiswa</h4>
+            </div>
+            <div class="panel-body">
+                <div class="container">
+                    <form role="form" onSubmit="return false;">
+                        <div class="row">
+                            <input type="text" class="col-md-10" placeholder="Nama Mahasiswa" id="n_mhs" autofocus="autofocus">
+                            <button class="col-md-2" id="btnCari"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> <br>
+
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Prodi</th>
+                        <th>HP</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script>
+        require('./mahasiswa.js');
+    </script>
+</body>
+
+</html>

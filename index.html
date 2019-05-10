@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sit-Pam</title>
+  <link rel="stylesheet" href="cssku.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="text-center"><img src="./img/security.png" alt="logo" height="100px"></div>
+        <h2 class="text-center">SATPAM GATE</h2>
+      </div>
+      <div class="col-sm-4">
+        <div class="count">
+          <strong>Mahasiswa belum kembali</strong>
+          <p id="mk"></p>
+        </div>
+        <div class="count">
+          <strong>Mahasiswa sudah kembali</strong>
+          <p id="mbk"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div>
+          <h4>Scan barcode KTM!</h4>
+        </div>
+        <div class="container">
+          <form role="form" onSubmit="return false;">
+            <div class="row">
+              <input type="text" class="flipkart-navbar-input col-md-10" placeholder="Nomor Induk Mahasiswa" id="nim"
+                autofocus="autofocus">
+              <button class="flipkart-navbar-button col-md-2" id="btnA"><span class="glyphicon glyphicon-log-out"></span></button>
+            </div>
+          </form>
+        </div>
+        <br>
+        <div class="pull-right">
+          <p>
+            <span id="hari"></span>,
+            <span id="tanggal"></span>
+            <span id="bulan"></span>
+            <span id="tahun"></span>
+          </p>
+        </div><br>
+
+
+
+        <div class="well">
+          <div class="row" id="panelmahasiswa">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    require('./renderer.js');
+  </script>
+</body>
+
+</html>
